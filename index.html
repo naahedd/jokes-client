@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokes API Client</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Jokes API</h1>
+            <p class="subtitle">jokes in multiple languages!</p>
+
+            <div class="box">
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label" for="selLang">Language</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                            <div class="control">
+                                <div class="select">
+                                    <select id="selLang">
+                                        <option value="any" selected>Any</option>
+                                        <option value="cs">Czech</option>
+                                        <option value="de">German</option>
+                                        <option value="en">English</option>
+                                        <option value="es">Spanish</option>
+                                        <option value="eu">Basque</option>
+                                        <option value="fr">French</option>
+                                        <option value="gl">Galician</option>
+                                        <option value="hu">Hungarian</option>
+                                        <option value="it">Italian</option>
+                                        <option value="lt">Lithuanian</option>
+                                        <option value="pl">Polish</option>
+                                        <option value="sv">Swedish</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label" for="selCat">Category</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                            <div class="control">
+                                <div class="select">
+                                    <select id="selCat">
+                                        <option value="any" selected>Any</option>
+                                        <option value="neutral">Neutral</option>
+                                        <option value="chuck">Chuck Norris</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label" for="selNum">Number</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                            <div class="control">
+                                <div class="select">
+                                    <select id="selNum">
+                                        <option value="all" selected>All</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label" for="jokeId">Joke ID</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                            <div class="control">
+                                <input class="input" type="text" id="jokeId" placeholder="Leave empty to use filters above">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label"></div>
+                    <div class="field-body">
+                        <div class="field">
+                            <div class="control">
+                                <button class="button is-primary" id="btnAmuse">Get Jokes!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="jokesContainer"></div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>

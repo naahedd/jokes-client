@@ -1,0 +1,35 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 800px;
+}
+
+#jokesContainer {
+    margin-top: 2rem;
+}
+
+.message {
+    margin-bottom: 1rem;
+}
+
+.message-body {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.box {
+    background-color: white;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1);
+}
+
+.title {
+    color: #363636;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: #4a4a4a;
+    margin-bottom: 2rem;
+}
