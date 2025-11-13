@@ -1,6 +1,4 @@
-const API_BASE = window.location.hostname === "localhost" 
-       ? "http://localhost:5000/api/v1/jokes"
-       : "https://jokes-api-server-0f4o.onrender.com";
+const API_BASE = "https://jokes-api-server-0f4o.onrender.com";
 
 document.getElementById("btnAmuse").addEventListener("click", async () => {
     const jokeId = document.getElementById("jokeId").value.trim();
