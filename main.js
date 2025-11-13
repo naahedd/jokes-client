@@ -1,4 +1,4 @@
-const API_BASE = "https://jokes-api-server-0f4o.onrender.com";
+const API_BASE = "https://jokes-api-server-0f4o.onrender.com/api/v1/jokes";
 
 document.getElementById("btnAmuse").addEventListener("click", async () => {
     const jokeId = document.getElementById("jokeId").value.trim();
